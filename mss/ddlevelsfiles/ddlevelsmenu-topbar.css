@@ -1,0 +1,42 @@
+/* ######### Chrome Main Menu Bar CSS ######### */
+
+.chromemenu{
+width: 100%;
+font-weight: bold;
+}
+
+.chromemenu:after{ /*Add margin between menu and rest of content in Firefox*/
+content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
+}
+
+.chromemenu ul{
+border: 1px solid #BBB;
+background: url(chromebg.gif) center center repeat-x;
+margin: 0;
+padding: 7px 0;
+text-align: center; /*set value to "right" for example to align menu to the left of page*/
+}
+
+.chromemenu ul li{
+display: inline;
+}
+
+.chromemenu ul li a{
+color: #494949;
+padding: 7px;
+margin: 0;
+text-decoration: none;
+border-right: 1px solid #DADADA;
+}
+
+.chromemenu ul li a:hover{
+background: url(chromebg2.gif) center center repeat-x;
+}
+
+.chromemenu ul li a.selected{
+background: url(chromebg2.gif) center center repeat-x;
+}

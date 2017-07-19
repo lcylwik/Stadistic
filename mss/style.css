@@ -1,0 +1,144 @@
+.hide { display:none  }
+a {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #084B8A;}
+body {  font-family: Arial, Helvetica, sans-serif; font-size: 18px}
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	font-weight: bold;
+	color: rgb(255,0,0);
+}
+h1 {  font-family: Arial, Helvetica, sans-serif; font-size: 25px; color:rgb(255,0,0);}
+h2 {  font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #FF8000}
+a:hover {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #996633; text-decoration: none; cursor:pointer}
+td { font-size: 103%; font-family: "Curier New"}
+select {  font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+tr {  font-family: Arial, Helvetica, sans-serif; font-size: 10px}
+
+.filtros{
+  
+  border: 2px solid white;
+  
+}
+
+/*Credits: Dynamic Drive CSS Library */
+/*URL: http://www.dynamicdrive.com/style/ */
+
+#tabs {
+	float:left;
+	width:100%;
+	font-size:93%;
+	line-height:normal;
+	border-bottom:1px solid #666;
+	margin-bottom:1em; /*margin between menu and rest of page*/
+	overflow:hidden;
+	}
+
+#tabs ul {
+	margin:0;
+	padding:10px 10px 0 0px;
+	list-style:none;
+	
+	}
+
+#tabs li {
+	display:inline;
+	margin:0;
+	padding:0;
+	}
+
+#tabs a {
+	float:left;
+	background:url("images/left.png") no-repeat left top;
+	margin:0;
+	padding:0 0 0 6px;
+	text-decoration:none;
+	}
+
+#tabs a span {
+	float:left;
+	display:block;
+	background:url("images/right.png") no-repeat right top;
+	padding:6px 15px 4px 6px;
+	margin-right:2px;
+	color:#FFF;
+	}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#tabs a span {float:none;}
+
+/* End IE5-Mac hack */
+#tabs a:hover span {
+	}
+
+#tabs a:hover {
+	background-position:0% -42px;
+	}
+
+#tabs a:hover span {
+	background-position:100% -42px;
+	}
+
+
+* html .maxima{
+	 width: 100%; 
+	 height: expression( this.scrollHeight > 249 ? "255px" : "auto" );
+	 overflow: auto; 
+	 padding: 5px";
+}
+
+.maxima{
+	 width: 100%; 
+	 max-height:250px; 
+	 overflow: auto; 
+	 padding: 5px";
+}
+
+
+.bfbutton {
+	font: bold 14px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+	margin:2px;
+	cursor:hand;
+	cursor:pointer;
+	/*background: blue;*/
+  text-decoration: none;
+  padding-right: 10px; /*adjust bullet image padding*/
+  color: darkblue;
+}
+
+.bfbutton:hover {
+	font: bold 14px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+	margin:2px;
+	text-decoration: underline;
+	
+}
+
+a.ovalbutton{
+background: transparent url('images/oval-gray-left.gif') no-repeat top left;
+display: block;
+float: right;
+font: normal 13px Tahoma; /* Change 13px as desired */
+line-height: 16px; /* This value + 4px + 4px (top and bottom padding of SPAN) must equal height of button background (default is 24px) */
+height: 24px; /* Height of button background height */
+padding-left: 11px; /* Width of left menu image */
+text-decoration: none;
+}
+
+a:link.ovalbutton, a:visited.ovalbutton, a:active.ovalbutton{
+color: #494949; /*button text color*/
+}
+
+a.ovalbutton span{
+background: transparent url('images/oval-gray-right.gif') no-repeat top right;
+float:left;
+display: block;
+padding: 4px 11px 4px 0; /*Set 11px below to match value of 'padding-left' value above*/
+}
+
+a.ovalbutton:hover{ /* Hover state CSS */
+background-position: bottom left;
+}
+
+a.ovalbutton:hover span{ /* Hover state CSS */
+background-position: bottom right;
+color: black;
+}

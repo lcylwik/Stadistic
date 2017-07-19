@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<HTML>
+    <HEAD>
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
+    	<style type="text/css">
+         /*this is what we want the div to look like
+           when it IS showing*/
+         div.centered{
+           display:block;
+         
+           /*set the div in the center of the screen*/
+           position:absolute;
+           top:23%;
+           left:33%;
+           width:350px;
+         }
+         select {
+           font-size:94%;
+           border: 3px solid #ccc;
+         }
+         
+         #tearshape{
+         	background: #5C5C5C;
+          padding: 3px 5px;
+          color: white;
+          font-weight: bold;
+          text-decoration: none;
+          -moz-border-radius: 9px 3px 9px 3px;
+          -webkit-border-radius: 3px;
+          -webkit-border-top-left-radius: 9px;
+          -webkit-border-bottom-right-radius: 9px;
+        }
+         
+         /*Credits: Dynamic Drive CSS Library */
+         /*URL: http://www.dynamicdrive.com/style/ */<!-- Hide entire CSS code from IE6 -->
+         <![if !IE 6]>
+         
+         .shiftcontainer{
+         position: relative;
+         left: 5px; /*Number should match -left shadow depth below*/
+         top: 5px; /*Number should match -top shadow depth below*/
+         }
+         
+         .shadowcontainer{
+         width: 514px; /* container width*/
+         background-color: #d1cfd0;
+         }
+         
+         .shadowcontainer .innerdiv{
+         /* Add container height here if desired */
+         background-color: white;
+         border: 1px solid gray;
+         padding: 6px;
+         position: relative;
+         left: -5px; /*shadow depth*/
+         top: -5px; /*shadow depth*/
+         }
+         
+         .cuadro{
+         	width:300px;
+          padding:10px;
+          border:5px solid gray;
+          margin:10px;
+         	background-color:#F3F3F3;
+          border: 5px outset;
+         }
+         
+
+     </style>        
+     <script LANGUAGE="JavaScript" type="text/javascript">
+     	   
+     	function selectPage(){
+     		var pagesObj = document.getElementById("pages"); 
+     		var pagina = pagesObj.options[pagesObj.selectedIndex].value;
+     		document.location.href=pagina;
+     	}  
+         
+     </script>
+    </HEAD>
+    <BODY bgcolor='#1F1F1F'>
+    	<div class='centered'>
+    		<div class="shiftcontainer">
+    		<div class="shadowcontainer">
+    		<div class="innerdiv">
+    	<form accept-charset="utf-8" method="POST" name="searchform">
+    	<table width='500px' align='center' >
+    		<tr height='100' style='background:url(images/formbg.gif) repeat-x center top;'>
+    			  <td align='center'>
+    			  	<img align='center' alt="Logo Prosa"  src='images\prosanew.jpg'>
+    			  </td>
+    		</tr>
+    		<tr  valign='middle' bgcolor='#DD9C0B' height='200px' style='background:url(images/menu_index.png) repeat-x center top;'>
+    			  <td align='center' valign='middle'>
+    			  	<div class='cuadro'>
+    			  	  <span width='200' id='tearshape'>Selecciona la Vista deseada:</span>
+    			  	  <br />
+    			  	  <br />
+    			  		<select id="pages">
+              	<option value="./emi_adq.php">Emisor y Adquirente</option>
+              	<option value="./dia.php">Vista por Horas</option>
+              	<option value="./emisor.php">Emisor</option>
+              	<option value="./adquirente.php">Adquirente</option>
+              	<option value="./dia_emisor.php">Emisor por Horas</option>
+              	<option value="./dia_adquirente.php">Adquirente por Horas</option>
+              	<option value="./acep_rech.php">Aceptadas vs Rechazadas</option>
+              	<option value="./anio.php">Anual</option>
+              	<option value="./bin_cod.php">Bines:Codigo vs Mes</option>
+              	<option value="./bines.php">Bines:Bin vs Mes</option>
+              	<option value="./bines_carnet.php">Bines Carnet</option>
+              	<option value="./bines_emisor_prosa.php">Emisor Prosa</option>
+                <option value="./front_end.php">Cajeros por Cod Resp</option>
+                <option value="./front_end_cajero.php">Cajeros por ID Cajero</option>
+             	</select>
+             	<br />
+             	<br />
+             	<input type='button' value='Aceptar' onClick="selectPage();">
+            </div>
+    			</td>
+    		</tr>
+    	</table>
+    	</form>
+      </div>
+      </div>
+      </div>
+    </div>
+    </BODY>
+</HTML>
